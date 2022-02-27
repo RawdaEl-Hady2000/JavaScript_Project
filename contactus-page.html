@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    
+    <style>
+        body{
+            background-color: rgb(235, 211, 180);
+        }
+        a{
+            margin-right: 40px;   
+             /* padding-top: 27px; */
+            text-decoration: none;
+            color:tan;
+            font-size: large;
+            font-style: italic;
+            font-family: cursive;
+        }
+        a:hover{
+         /* color:tan; */
+         color: lightseagreen;
+        }
+
+        /* .container{
+            background-color: lightsteelblue;
+            text-align: center;
+            } */
+        .contact{
+            background-image: linear-gradient(tan,pink);
+            color: midnightblue;
+            font-family: serif;
+            font-style: italic;
+            font-size: 30px;   
+            margin: auto;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 27px;
+            text-align: center;
+            width: 400px;
+            border-radius: 6px;
+            box-shadow: 3px 5px  6px  lightslategrey;
+        }
+        /* .container{
+           border: 1px solid black;
+        } */
+        form{
+            padding-top: 20px;
+        }
+        input{
+            padding: 10px;
+            width: 250px;
+            border-radius: 6px;
+            margin: 3px;
+        }
+        textarea{
+            border-radius: 6px;
+            border: 1px solid black;
+        }
+
+        footer{
+            background-color: black;
+            color:tan;
+            padding: 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        input[type="button"] {
+        margin-right: -40px;
+        }
+        input[type="reset"] {
+        margin-right: -35px;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: black;">
+        <h3 style="text-align: left; display: inline; font-size: 30px;font-family: cursive; font-weight: bolder; padding-left: 15px;color: burlywood; ">BatOOt</h3>
+        <div style="text-align: right;display: inline; float: right; padding-top: 10px;">
+        <a href="home.html">Home</a>
+        <a href="card-page.html">Card</a>
+        <a href="#">Contact Us</a>
+        <a href="about-page.html">About Us</a>
+        </div>
+    </header>
+<!-- -------------------------------------- -->
+
+
+    <div class="container">
+        <div class="contact">
+            Hello , You Can Contact Us 
+            <form method="post">
+                <input type="text" placeholder="Plz, Enter Your Name"> <br>
+                <input type="password" placeholder="Plz, Enter Your password"> <br>
+                <input type="text" placeholder="Plz, Enter Your address"> <br>
+                <input type="email" placeholder="Fname.Lname@gmail.com"> <br>
+                <textarea rows="10" cols="35" placeholder="Write your comment ...."></textarea>
+                <!-- <input type="submit" value="Send To Mail" style="width: 100px;margin-left: 120px;"> -->
+                 <a href="mailto:rawda.adel.elsawaf@gmail.com" style="margin-left:2px;color:black">
+                    <input type="button" value="Send To Mail" style="width: 100px;margin-left:80px;">
+                </a> 
+
+                <input type="reset" value="Cancle" style="width: 59px;margin-left: 1px;" onclick="back()"><br>
+                <!-- <a href="mailto:rawda.adel.elsawaf@gmail.com" style="margin-left:20px;color:black">Send to mail</a> -->
+            </form>
+        </div>
+    </div>
+    
+<!-- --------------------------------------- -->
+    <footer>
+        The Website is Copyright &copy; By Rawda Elsawaf track DOT NET 2021/2022
+    </footer>
+
+    <script>
+        function back(){
+          open("home.html","","width:auto,height:auto")
+        }
+    </script>
+</body>
+</html>
